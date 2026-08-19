@@ -1,0 +1,18 @@
+{
+  "version": "3.0.4",
+  "releaseDate": "2026-04-13",
+  "releaseNotes": "### What's New in 3.0.4.0\n\n**CIGI Input Upgrade**\n- 3Waves now understands the CIGI data format directly. Pick CIGI from Input Formatting -> Axis Order and the app reads the right aircraft orientation from the simulator's CIGI stream, even when the simulator includes other entities like ships or targeting pods.\n- A new \"Ownship Entity ID\" field lets you tell 3Waves which entity is the aircraft (defaults to 0, which is the standard).\n- The CIGI input profile now listens on port 6000 by default, matching the standard IG relay setup.\n\n**Under the Hood**\n- Existing input profiles (MSFS, Prepar3D, etc.) are preserved exactly as before. No changes needed on your end.",
+  "downloadUrl": "https://pub-9ca34d30fcdc456e8cfe2bcf8435754a.r2.dev/releases/3Waves_3_0_4_0_update.zip",
+  "fullInstallUrl": "https://pub-9ca34d30fcdc456e8cfe2bcf8435754a.r2.dev/releases/3Waves_3_0_4_0_install.zip",
+  "fileName": "3Waves_3_0_4_0_update.zip",
+  "fileSize": 79986886,
+  "sha256": "596cc2e9877872899e4d4fca34fd84d80952cee6c72a003b3fad0823d35be161",
+  "fullInstallFileName": "3Waves_3_0_4_0_install.zip",
+  "fullInstallFileSize": 102012475,
+  "fullInstallSha256": "aa9bafdf1f85a541648fac19d26940c4ee1d1f90c75b76940ac8f1fd43e33f6f",
+  "minimumVersion": "3.0.3",
+  "mandatory": false,
+  "changelog": "https://luna-labs-us.github.io/3Waves-Public/CHANGELOG.md",
+  "softwareManagerVersion": "2.1",
+  "softwareManagerDownloadUrl": "https://pub-9ca34d30fcdc456e8cfe2bcf8435754a.r2.dev/softwareManager/3WavesSoftwareManager.exe"
+}
