@@ -1,25 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <update>
-  <version>3.0.4</version>
-  <releaseDate>2026-04-13</releaseDate>
-  <url>https://pub-9ca34d30fcdc456e8cfe2bcf8435754a.r2.dev/releases/3Waves_3_0_4_0_update.zip</url>
-  <fullInstallUrl>https://pub-9ca34d30fcdc456e8cfe2bcf8435754a.r2.dev/releases/3Waves_3_0_4_0_install.zip</fullInstallUrl>
-  <fileName>3Waves_3_0_4_0_update.zip</fileName>
-  <fileSize>79986886</fileSize>
-  <sha256>596cc2e9877872899e4d4fca34fd84d80952cee6c72a003b3fad0823d35be161</sha256>
-  <fullInstallFileName>3Waves_3_0_4_0_install.zip</fullInstallFileName>
-  <fullInstallFileSize>102012475</fullInstallFileSize>
-  <fullInstallSha256>aa9bafdf1f85a541648fac19d26940c4ee1d1f90c75b76940ac8f1fd43e33f6f</fullInstallSha256>
-  <minimumVersion>3.0.3</minimumVersion>
+  <version>3.0.5</version>
+  <releaseDate>2026-10-05</releaseDate>
+  <url>https://pub-9ca34d30fcdc456e8cfe2bcf8435754a.r2.dev/releases/3Waves_3_0_5_1_update.zip</url>
+  <fullInstallUrl>https://pub-9ca34d30fcdc456e8cfe2bcf8435754a.r2.dev/releases/3Waves_3_0_5_1_install.zip</fullInstallUrl>
+  <fileName>3Waves_3_0_5_1_update.zip</fileName>
+  <fileSize>79851163</fileSize>
+  <sha256>33ff5b30d911a087ad073443e2cab9dc99f4ebc68301b37ea930d0611458c695</sha256>
+  <fullInstallFileName>3Waves_3_0_5_1_install.zip</fullInstallFileName>
+  <fullInstallFileSize>102082143</fullInstallFileSize>
+  <fullInstallSha256>f77e897820c26bbe8e04cd49d609cedbaba3e0a6b7800a1bfd40100cff08e09f</fullInstallSha256>
+  <minimumVersion>3.0.5</minimumVersion>
   <mandatory>false</mandatory>
-  <releaseNotes>### What's New in 3.0.4.0
+  <releaseNotes>### What's New in 3.0.5.1
 
-**CIGI Input Upgrade**
-- 3Waves now understands the CIGI data format directly. Pick CIGI from Input Formatting -&gt; Axis Order and the app reads the right aircraft orientation from the simulator's CIGI stream, even when the simulator includes other entities like ships or targeting pods.
-- A new "Ownship Entity ID" field lets you tell 3Waves which entity is the aircraft (defaults to 0, which is the standard).
-- The CIGI input profile now listens on port 6000 by default, matching the standard IG relay setup.
-
-**Under the Hood**
-- Existing input profiles (MSFS, Prepar3D, etc.) are preserved exactly as before. No changes needed on your end.</releaseNotes>
+**Improvements:**
+- 3WAVES and the Software Manager are now code-signed by 3 Waves, Inc, so Windows no longer shows an unknown-publisher prompt. Nothing else changes from 3.0.5.
+- If you already installed 3.0.5, reinstall it from https://3waves.tech/downloads to get the signed build.</releaseNotes>
   <changelog>https://luna-labs-us.github.io/3Waves-Public/CHANGELOG.md</changelog>
 </update>
