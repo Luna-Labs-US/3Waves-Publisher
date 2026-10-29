@@ -1,21 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <update>
-  <version>3.0.5</version>
-  <releaseDate>2026-10-05</releaseDate>
-  <url>https://pub-9ca34d30fcdc456e8cfe2bcf8435754a.r2.dev/releases/3Waves_3_0_5_1_update.zip</url>
-  <fullInstallUrl>https://pub-9ca34d30fcdc456e8cfe2bcf8435754a.r2.dev/releases/3Waves_3_0_5_1_install.zip</fullInstallUrl>
-  <fileName>3Waves_3_0_5_1_update.zip</fileName>
-  <fileSize>79851163</fileSize>
-  <sha256>33ff5b30d911a087ad073443e2cab9dc99f4ebc68301b37ea930d0611458c695</sha256>
-  <fullInstallFileName>3Waves_3_0_5_1_install.zip</fullInstallFileName>
-  <fullInstallFileSize>102082143</fullInstallFileSize>
-  <fullInstallSha256>f77e897820c26bbe8e04cd49d609cedbaba3e0a6b7800a1bfd40100cff08e09f</fullInstallSha256>
+  <version>3.1.0</version>
+  <releaseDate>2026-10-12</releaseDate>
+  <url>https://pub-9ca34d30fcdc456e8cfe2bcf8435754a.r2.dev/releases/3Waves_3_1_0_0_update.zip</url>
+  <fullInstallUrl>https://pub-9ca34d30fcdc456e8cfe2bcf8435754a.r2.dev/releases/3Waves_3_1_0_0_install.zip</fullInstallUrl>
+  <fileName>3Waves_3_1_0_0_update.zip</fileName>
+  <fileSize>79902580</fileSize>
+  <sha256>9753f2624025cc1d147d1e67bf1357b08702bfcdb3256de0c6ea279b1fd2f74e</sha256>
+  <fullInstallFileName>3Waves_3_1_0_0_install.zip</fullInstallFileName>
+  <fullInstallFileSize>102080914</fullInstallFileSize>
+  <fullInstallSha256>919b2ab0d00552c1ab9de61023fd8d9ed99dba08278e1b6418426c2ba69ce46c</fullInstallSha256>
   <minimumVersion>3.0.5</minimumVersion>
   <mandatory>false</mandatory>
-  <releaseNotes>### What's New in 3.0.5.1
+  <releaseNotes>### What's New in 3.1.0
+
+3.1.0 unlocks a higher stimulation range, built for our research partners on the new 3WAVES boards. 3WAVES now drives both side electrodes against a software ground, raising the stimulation peak to 2.5 mA, up from 1.4 mA: nearly twice the range for stronger motion cues.
+
+**New:**
+- Support for the new 3WAVES boards. They switch to the "3 Elec. Ungrounded" mode on their own when connected.
+- Built-in X-Plane 12 profile. Select "X-Plane" in the input list, then in X-Plane send Data Output row 16 (angular velocities) over the network to 127.0.0.1, port 49023.
 
 **Improvements:**
-- 3WAVES and the Software Manager are now code-signed by 3 Waves, Inc, so Windows no longer shows an unknown-publisher prompt. Nothing else changes from 3.0.5.
-- If you already installed 3.0.5, reinstall it from https://3waves.tech/downloads to get the signed build.</releaseNotes>
+- Stimulation peak sliders now show the total current across both electrodes, up to 2.5 mA. Up to 2.0 mA is the normal range; 2.0 to 2.5 mA is for pushing the sensation and shows red. The default peak is now 1.6 mA.
+- If you saved a profile on an earlier version, re-check your stimulation levels before a session. Saved peaks now read as totals, so they deliver less current than before.
+- The 3D plane and head models are off by default on new installs.
+- The wave generator now offers sine, square, triangle and sawtooth, and holds a steady 300 Hz while running.
+
+**Bug Fixes:**
+- The Hardware Status panel shows each electrode's role as reported by the board.
+- Boards on firmware 1.1.5 no longer overrun the serial port at high write rates.</releaseNotes>
   <changelog>https://luna-labs-us.github.io/3Waves-Public/CHANGELOG.md</changelog>
 </update>
