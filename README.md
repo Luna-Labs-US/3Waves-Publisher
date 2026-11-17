@@ -35,12 +35,16 @@ is where the actual payloads live.
 ## Keeping it in sync
 
 These two files must match the ones at the root of `3Waves-Public` on every
-release, except that the URLs inside them point at R2 rather than at a Pages
-path. If they drift, clients on the legacy URL will be offered a version that
-does not match what the website advertises.
+release, byte for byte (their download URLs already point at R2). If they
+drift, clients on the legacy URL will be offered a version that does not match
+what the website advertises. 3.2.0 shipped without them and installed Managers
+kept offering 3.1.0.
 
-The release build writes the canonical manifests. Copy them here, repoint the
-URLs at R2, commit, and push. Pages redeploys on push to `main`.
+Don't copy them by hand. `Python/build/publish-webpage.py` in 3Waves-Software
+opens a PR here with the manifests from `3Waves-Public` main as its last step,
+and refuses if that manifest is for a different version. `main` requires a PR,
+so the release isn't visible to installed Managers until that PR merges. Pages
+redeploys on merge.
 
 Verify after any change:
 
